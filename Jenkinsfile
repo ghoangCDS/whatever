@@ -1,4 +1,4 @@
-library 'Shared Lib'
+library 'SharedLibs'
 
 pipeline {
   agent {
