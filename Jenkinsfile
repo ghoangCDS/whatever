@@ -1,5 +1,3 @@
-library 'SharedLibs'
-
 pipeline {
   agent {
     docker {
