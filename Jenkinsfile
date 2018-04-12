@@ -1,5 +1,3 @@
-library 'SharedLibs'
-
 pipeline {
   agent {
     docker {
@@ -12,6 +10,7 @@ pipeline {
       steps {
         echo 'hello'
         sh 'mvn -v'
+        echo 'Hello'
       }
     }
   }
