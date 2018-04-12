@@ -9,6 +9,7 @@ pipeline {
     stage('stage6') {
       steps {
         echo 'hello'
+        sh 'mvn -v'
       }
     }
   }
