@@ -1,3 +1,5 @@
+library 'SharedLibs'
+
 pipeline {
   agent {
     docker {
@@ -13,5 +15,13 @@ pipeline {
         echo 'Hello'
       }
     }
+    
+    stage('Shared Lib') {
+      steps {
+        helloWorld("Jenkins")
+      }
+    }
+    
+    
   }
 }
